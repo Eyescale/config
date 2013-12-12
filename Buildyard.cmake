@@ -1,1 +1,1 @@
-set(BUILDYARD_REV release-2013.6.0)
+set(BUILDYARD_REV release-2013.12.0)
