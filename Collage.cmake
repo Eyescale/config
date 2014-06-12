@@ -8,5 +8,5 @@ set(COLLAGE_PORT_DEPENDS boost)
 set(COLLAGE_BOOST_COMPONENTS
   "system regex date_time serialization program_options thread")
 set(COLLAGE_REPO_URL https://github.com/Eyescale/Collage.git)
-set(COLLAGE_REPO_TAG master)
+set(COLLAGE_REPO_TAG 1.1)
 set(COLLAGE_FORCE_BUILD ${CI_BUILD})
