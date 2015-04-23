@@ -11,7 +11,8 @@ set(DISPLAYCLUSTER_DEB_DEPENDS libavutil-dev libavformat-dev libavcodec-dev
   libboost-date-time-dev libboost-serialization-dev libboost-test-dev
   libboost-program-options-dev libboost-regex-dev libboost-system-dev
   libboost-thread-dev libfcgi-dev)
-set(DISPLAYCLUSTER_PORT_DEPENDS ffmpeg boost poppler)
+set(DISPLAYCLUSTER_PORT_DEPENDS ffmpeg boost poppler fcgi)
+#set(DISPLAYCLUSTER_SUBPROJECT ON)
 
 find_package(MPI)
 if(MPI_FOUND)
