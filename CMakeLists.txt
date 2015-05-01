@@ -11,12 +11,14 @@ include(GitExternal)
 
 # Workarounds:
 set(Boost_NO_BOOST_CMAKE ON)
-if( NOT "$ENV{BOOST_ROOT}" STREQUAL "" OR
-    NOT "$ENV{BOOST_LIBRARYDIR}" STREQUAL "")
+if(NOT "$ENV{BOOST_ROOT}" STREQUAL "" OR
+   NOT "$ENV{BOOST_LIBRARYDIR}" STREQUAL "")
   set(Boost_NO_SYSTEM_PATHS ON CACHE BOOL "Ignore system installation")
 endif()
 
 set(SUBPROJECT_TAG master) # always stay up to date
+include(SubProject) # Read sub projects from config files
+subproject_configure()
 
 set(VERSION_MAJOR "2015")
 set(VERSION_MINOR "1")
